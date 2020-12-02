@@ -12,3 +12,7 @@ services:
   hello_world:
     <<: *script
     command: ["python", "-m", "questions.hello_world"]
+
+  report_repair:
+    <<: *script
+    entrypoint: ["python", "-m", "questions.report_repair"]
