@@ -1,0 +1,14 @@
+version: "3.4"
+
+services:
+
+  # Handles common setup for the individual services
+  script: &script
+    image: library/python:3.9.0
+    working_dir: "/app"
+    volumes:
+      - "./:/app"
+
+  hello_world:
+    <<: *script
+    command: ["python", "-m", "questions.hello_world"]

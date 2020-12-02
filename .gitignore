@@ -1,2 +1,3 @@
-# JetBrains IDE's will create this folder automatically
 .idea
+
+__pycache__/
