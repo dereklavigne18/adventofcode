@@ -16,3 +16,7 @@ services:
   report_repair:
     <<: *script
     entrypoint: ["python", "-m", "questions.report_repair"]
+
+  password_philosophy:
+    <<: *script
+    entrypoint: ["python", "-m", "questions.password_philosophy"]
