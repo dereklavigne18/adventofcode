@@ -23,4 +23,8 @@ services:
 
   toboggan_trajectory:
     <<: *script
-    entrypoint: [ "python", "-m", "questions.toboggan_trajectory" ]
+    entrypoint: ["python", "-m", "questions.toboggan_trajectory"]
+
+  passport_processing:
+    <<: *script
+    entrypoint: ["python", "-m", "questions.passport_processing"]
