@@ -13,18 +13,27 @@ services:
     <<: *script
     command: ["python", "-m", "questions.hello_world"]
 
+  # Day 1
   report_repair:
     <<: *script
     entrypoint: ["python", "-m", "questions.report_repair"]
 
+  # Day 2
   password_philosophy:
     <<: *script
     entrypoint: ["python", "-m", "questions.password_philosophy"]
 
+  # Day 3
   toboggan_trajectory:
     <<: *script
     entrypoint: ["python", "-m", "questions.toboggan_trajectory"]
 
+  # Day 4
   passport_processing:
     <<: *script
     entrypoint: ["python", "-m", "questions.passport_processing"]
+
+  # Day 5
+  binary_boarding:
+    <<: *script
+    entrypoint: ["python", "-m", "questions.binary_boarding"]
