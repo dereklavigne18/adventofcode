@@ -37,3 +37,8 @@ services:
   binary_boarding:
     <<: *script
     entrypoint: ["python", "-m", "questions.binary_boarding"]
+
+  # Day 6
+  custom-customs:
+    <<: *script
+    entrypoint: ["python", "-m", "questions.custom_customs"]
