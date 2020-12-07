@@ -42,3 +42,8 @@ services:
   custom-customs:
     <<: *script
     entrypoint: ["python", "-m", "questions.custom_customs"]
+
+  # Day 7
+  handy-haversacks:
+    <<: *script
+    entrypoint: ["python", "-m", "questions.handy_haversacks"]
