@@ -4,7 +4,7 @@ from math import prod
 from typing import List, Optional, Tuple
 
 
-INPUT_FILE_PATH = "/app/inputs/report_repair.txt"
+INPUT_FILE_PATH = "/app/advent2020/inputs/report_repair.txt"
 
 
 def find_vals_summing_to_target(vals: List[int], addend_count: int, target: int) -> Optional[List[int]]:

@@ -24,7 +24,7 @@ def count_trees_in_path(grid: List[List[str]], horizontal_velocity: int, vertica
 
 
 def parse_input() -> List[List[str]]:
-    with open("/app/inputs/toboggan_trajectory.txt", "r") as input_file:
+    with open("/app/advent2020/inputs/toboggan_trajectory.txt", "r") as input_file:
         return [list(line) for line in input_file]
 
 

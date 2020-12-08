@@ -9,46 +9,45 @@ services:
     volumes:
       - "./:/app"
 
-  hello_world:
-    <<: *script
-    command: ["python", "-m", "questions.hello_world"]
+
+  ### 2020 Services
 
   # Day 1
-  report_repair:
+  report-repair:
     <<: *script
-    entrypoint: ["python", "-m", "questions.report_repair"]
+    entrypoint: ["python", "-m", "advent2020.questions.report_repair"]
 
   # Day 2
-  password_philosophy:
+  password-philosophy:
     <<: *script
-    entrypoint: ["python", "-m", "questions.password_philosophy"]
+    entrypoint: ["python", "-m", "advent2020.questions.password_philosophy"]
 
   # Day 3
-  toboggan_trajectory:
+  toboggan-trajectory:
     <<: *script
-    entrypoint: ["python", "-m", "questions.toboggan_trajectory"]
+    entrypoint: ["python", "-m", "advent2020.questions.toboggan_trajectory"]
 
   # Day 4
-  passport_processing:
+  passport-processing:
     <<: *script
-    entrypoint: ["python", "-m", "questions.passport_processing"]
+    entrypoint: ["python", "-m", "advent2020.questions.passport_processing"]
 
   # Day 5
-  binary_boarding:
+  binary-boarding:
     <<: *script
-    entrypoint: ["python", "-m", "questions.binary_boarding"]
+    entrypoint: ["python", "-m", "advent2020.questions.binary_boarding"]
 
   # Day 6
   custom-customs:
     <<: *script
-    entrypoint: ["python", "-m", "questions.custom_customs"]
+    entrypoint: ["python", "-m", "advent2020.questions.custom_customs"]
 
   # Day 7
   handy-haversacks:
     <<: *script
-    entrypoint: ["python", "-m", "questions.handy_haversacks"]
+    entrypoint: ["python", "-m", "advent2020.questions.handy_haversacks"]
 
-  # Day handheld-halting
+  # Day 8
   handheld-halting:
     <<: *script
-    entrypoint: ["python", "-m", "questions.handheld_halting"]
+    entrypoint: ["python", "-m", "advent2020.questions.handheld_halting"]

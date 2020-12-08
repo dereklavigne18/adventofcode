@@ -53,7 +53,7 @@ def seat_id_from_line(line: str) -> int:
 
 def calculate_seat_ids_from_input_file() -> List[int]:
     seat_ids = []
-    with open("/app/inputs/binary_boarding.txt", "r") as input_file:
+    with open("/app/advent2020/inputs/binary_boarding.txt", "r") as input_file:
         for line in input_file:
             try:
                 seat_ids.append(seat_id_from_line(line.strip()))

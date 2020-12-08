@@ -86,7 +86,7 @@ def find_valid_passports() -> List[Passport]:
     # Iterate through file and group passwords so its one per line
     passport_data = {}
     passports = []
-    with open("/app/inputs/passport_processing.txt", "r") as input_file:
+    with open("/app/advent2020/inputs/passport_processing.txt", "r") as input_file:
         for line in input_file:
 
             clean_line = line.strip()

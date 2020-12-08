@@ -80,7 +80,7 @@ def corrective_calculate_accumulated(commands: List[str]) -> int:
 
 
 def parse_input_file() -> List[str]:
-    with open("/app/inputs/handheld_halting.txt", "r") as input_file:
+    with open("/app/advent2020/inputs/handheld_halting.txt", "r") as input_file:
         return [line.strip() for line in input_file]
 
 
