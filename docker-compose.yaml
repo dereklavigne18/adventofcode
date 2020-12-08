@@ -47,3 +47,8 @@ services:
   handy-haversacks:
     <<: *script
     entrypoint: ["python", "-m", "questions.handy_haversacks"]
+
+  # Day handheld-halting
+  handheld-halting:
+    <<: *script
+    entrypoint: ["python", "-m", "questions.handheld_halting"]
