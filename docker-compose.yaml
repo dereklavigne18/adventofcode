@@ -9,6 +9,30 @@ services:
     volumes:
       - "./:/app"
 
+  # Handles common setup for test services
+  test: &test
+    build:
+      context: .
+      dockerfile: ./docker/test.dockerfile
+    working_dir: "/app"
+    volumes:
+      - "./:/app"
+
+
+
+  ### 2019 Services
+
+  # Run Tests
+  test-2019:
+    <<: *test
+    entrypoint: ["pytest", "--cov=advent2019", "--cov-config=.coveragerc", "advent2019/tests/"]
+
+  # Day 1
+  tyranny-of-rocket-equation:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2019.questions.tyranny_of_rocket_equation"]
+
+
 
   ### 2020 Services
 

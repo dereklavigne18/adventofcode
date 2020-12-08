@@ -1,0 +1,2 @@
+[run]
+omit = advent2019/tests/*,*/__init__.py
