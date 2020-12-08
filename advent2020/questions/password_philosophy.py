@@ -57,7 +57,7 @@ def is_char(text: Any) -> bool:
 def count_valid_passwords_in_input_file(password_rule_type: type) -> int:
     valid_count = 0
 
-    with open("/app/inputs/password_philosophy.txt", "r") as input_file:
+    with open("/app/advent2020/inputs/password_philosophy.txt", "r") as input_file:
         for line in input_file:
             (num1, num2, char, password) = parse_line(line)
 

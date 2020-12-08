@@ -40,7 +40,7 @@ def get_all_groups_answers() -> Tuple[List[List[int]], List[List[int]]]:
     at_least_one_yes_group_answers = []
     all_yes_group_answers = []
 
-    with open("/app/inputs/custom_customs.txt", "r") as input_file:
+    with open("/app/advent2020/inputs/custom_customs.txt", "r") as input_file:
 
         group_size = 0
         group_answers_input = ""

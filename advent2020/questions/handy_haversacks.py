@@ -102,7 +102,7 @@ def parse_input_line(line: str, bag_locator: BagLocator) -> None:
 def parse_input_file() -> BagLocator:
     bag_locator = BagLocator()
 
-    with open("/app/inputs/handy_haversacks.txt", "r") as input_file:
+    with open("/app/advent2020/inputs/handy_haversacks.txt", "r") as input_file:
         for line in input_file:
             parse_input_line(line, bag_locator)
 
