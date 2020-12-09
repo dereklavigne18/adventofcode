@@ -22,7 +22,7 @@ services:
 
   ### 2019 Services
 
-  # Run Tests
+  # Run 2019 Tests
   test-2019:
     <<: *test
     entrypoint: ["pytest", "--cov=advent2019", "--cov-config=.coveragerc", "advent2019/tests/"]
@@ -40,6 +40,11 @@ services:
 
 
   ### 2020 Services
+
+  # Run 2020 Tests
+  test-2020:
+    <<: *test
+    entrypoint: ["pytest", "--cov=advent2020", "--cov-config=.coveragerc", "advent2020/tests/"]
 
   # Day 1
   report-repair:
@@ -80,3 +85,8 @@ services:
   handheld-halting:
     <<: *script
     entrypoint: ["python", "-m", "advent2020.questions.handheld_halting"]
+
+  # Day 9
+  encoding-error:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2020.questions.encoding_error"]
