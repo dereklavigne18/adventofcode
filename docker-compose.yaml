@@ -32,6 +32,11 @@ services:
     <<: *script
     entrypoint: ["python", "-m", "advent2019.questions.tyranny_of_rocket_equation"]
 
+  # Day 2
+  program-alarm:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2019.questions.program_alarm"]
+
 
 
   ### 2020 Services
