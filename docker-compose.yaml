@@ -90,3 +90,8 @@ services:
   encoding-error:
     <<: *script
     entrypoint: ["python", "-m", "advent2020.questions.encoding_error"]
+
+  # Day 10
+  adapter-array:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2020.questions.adapter_array"]
