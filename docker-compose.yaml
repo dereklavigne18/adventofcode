@@ -95,3 +95,8 @@ services:
   adapter-array:
     <<: *script
     entrypoint: ["python", "-m", "advent2020.questions.adapter_array"]
+
+  # Day 11
+  seating-system:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2020.questions.seating_system"]
