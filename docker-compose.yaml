@@ -100,3 +100,8 @@ services:
   seating-system:
     <<: *script
     entrypoint: ["python", "-m", "advent2020.questions.seating_system"]
+
+  # Day 12
+  rain-risk:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2020.questions.rain_risk"]
