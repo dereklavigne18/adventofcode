@@ -105,3 +105,8 @@ services:
   rain-risk:
     <<: *script
     entrypoint: ["python", "-m", "advent2020.questions.rain_risk"]
+
+  # Day 13
+  shuttle-search:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2020.questions.shuttle_search"]
