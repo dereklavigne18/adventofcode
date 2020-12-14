@@ -82,10 +82,6 @@ def find_timestamp_where_departure_sequence_is_met_provider() -> List[Tuple[List
             ["x", "x", "x", "x"],
             None
         ),
-        (
-            ["x", "5", "3", "4"],
-            11
-        )
     ]
 
 

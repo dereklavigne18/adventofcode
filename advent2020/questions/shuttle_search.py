@@ -49,45 +49,9 @@ def find_timestamp_where_departure_sequence_is_met(departure_sequence: List[str]
     accumulator = 0
     for bus_id, bus_index in bus_offsets.items():
         floored_divisor = product // bus_id
-        accumulator += bus_index * inverse_modulo(floored_divisor, bus_id) * floored_divisor
+        accumulator += (bus_id - (bus_index % bus_id)) * inverse_modulo(floored_divisor, bus_id) * floored_divisor
 
     return accumulator % product
-
-
-    #
-    # buses = sorted(bus_offsets.keys(), reverse=True)
-    #
-    # cumulative_product = 1
-    # timestamp = buses[0] - (bus_offsets[buses[0]] % buses[0])
-    # for bus_index, bus in enumerate(buses[:-1]):
-    #     cumulative_product *= 1
-    #
-    #     next_bus_id = buses[bus_index + 1]
-    #     next_remainder = next_bus_id - (bus_offsets[next_bus_id] % next_bus_id)
-    #     print("NR", next_remainder)
-    #     while timestamp % next_bus_id != next_remainder:
-    #         timestamp += cumulative_product
-    #
-    # return timestamp
-
-    ### Attempt 1
-
-    # step_size = buses[0]
-    # step_num = 1
-    # while True:
-    #     timestamp = step_num * step_size - bus_offsets[step_size]
-    #
-    #     fits_sequence = True
-    #     for bus_id in buses[1:]:
-    #         if not (timestamp + bus_offsets[bus_id]) % bus_id == 0:
-    #             fits_sequence = False
-    #             break
-    #
-    #     if not fits_sequence:
-    #         step_num += 1
-    #         continue
-    #
-    #     return timestamp
 
 
 def parse_input_file() -> Tuple[int, List[str]]:
