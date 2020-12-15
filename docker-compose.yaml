@@ -110,3 +110,8 @@ services:
   shuttle-search:
     <<: *script
     entrypoint: ["python", "-m", "advent2020.questions.shuttle_search"]
+
+  # Day 14
+  docking-data:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2020.questions.docking_data"]
