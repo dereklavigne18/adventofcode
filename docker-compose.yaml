@@ -115,3 +115,8 @@ services:
   docking-data:
     <<: *script
     entrypoint: ["python", "-m", "advent2020.questions.docking_data"]
+
+  # Day 15
+  rambunctious-recitation:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2020.questions.rambunctious_recitation"]
