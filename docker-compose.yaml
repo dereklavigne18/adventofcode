@@ -120,3 +120,8 @@ services:
   rambunctious-recitation:
     <<: *script
     entrypoint: ["python", "-m", "advent2020.questions.rambunctious_recitation"]
+
+  # Day 16
+  ticket-translation:
+    <<: *script
+    entrypoint: ["python", "-m", "advent2020.questions.ticket_translation"]
